@@ -1,5 +1,4 @@
 import CourseInfoForm from '@/components/CourseInfoForm';
-import Example from '@/components/CourseInfoForm';
 import styles from './index.less';
 
 export default function IndexPage() {
