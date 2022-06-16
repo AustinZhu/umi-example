@@ -1,5 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useModel } from 'umi';
+import CourseOutlineSection from './CourseOutlineSection';
+import CourseTitleSection from './CourseTitleSection';
 
 export default () => {
   const { courses, fetchCourse } = useModel('model');
@@ -23,8 +25,8 @@ export default () => {
         </label>
         <input type="submit" value="Submit" />
       </form>
-      <p>{courses.title}</p>
-      <p>{courses.outline}</p>
+      <CourseTitleSection></CourseTitleSection>
+      <CourseOutlineSection></CourseOutlineSection>
     </div>
   );
 };
